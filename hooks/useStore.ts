@@ -1,5 +1,5 @@
-import { firebaseEventsService } from '@/services/firebaseEvents';
 import { firebaseAuthService } from '@/services/firebaseAuth';
+import { firebaseEventsService } from '@/services/firebaseEvents';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 

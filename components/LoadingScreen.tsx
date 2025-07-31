@@ -1,6 +1,6 @@
-import React from 'react';
-import { View, Text, ActivityIndicator, StyleSheet } from 'react-native';
 import { Colors, FontSize, Spacing } from '@/constants/Theme';
+import React from 'react';
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 
 export function LoadingScreen() {
   return (
