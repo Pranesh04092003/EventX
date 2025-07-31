@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "EventX",
+    "slug": "eventx",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/android/playstore-icon.png",
+    "scheme": "eventx",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.pranesh.eventx",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android/playstore-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "googleServicesFile": "./android/app/google-services.json"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/android/playstore-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/android/playstore-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermissionText": "$(PRODUCT_NAME) needs access to your Camera to scan QR codes and barcodes."
+        }
+      ],
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "firebase": {
+        "projectId": "eventx-app-2025",
+        "appId": "1:876281632311:web:fbcc8d1c34674d7bb111b2",
+        "apiKey": "AIzaSyByEifKJMMgzwIwh5XHWivqM9hmmsv4JkU",
+        "authDomain": "eventx-app-2025.firebaseapp.com",
+        "storageBucket": "eventx-app-2025.firebasestorage.app",
+        "messagingSenderId": "876281632311",
+        "measurementId": "G-CH6W0FP244"
+      },
+      "eas": {
+        "projectId": "ee3c4b95-028e-4440-9de8-08d5fb81e163"
+      }
+    },
+    "owner": "prani000222"
+  }
+}
